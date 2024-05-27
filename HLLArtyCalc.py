@@ -12,7 +12,7 @@ else:
 print(Fore.BLUE)
 print("Hell Let Loose Artillery Calculator")
 print("Ctrl-C to exit")
-print("Loader bearing needs to be -50˚")
+print("Loader bearing needs to be -50˚ for gunner to be centered")
 print(Fore.CYAN)
 print("A good guide to HLL Arty (made not by me): https://www.hell-let-loose-calculator.com/#/help")
 print()
@@ -36,7 +36,7 @@ elif arg == "b":  # british
     m = (267 - 533) / (1600 - 100)  # using (1600, 267) and (100, 533)
     b = 267 - m * 1600 # using (1600, 267)
     print(Fore.YELLOW + "Calculating for British Artillery (QF 25-Pounder)")
-else:  # non-soviet (Germany & US)
+else:  # germany & US
     m = (622 - 978) / (1600 - 100)  # using (1600, 622) and (100, 978)
     b = 622 - m * 1600  # using (1600, 622)
     print(Fore.YELLOW + "Calculating for US/Germany Artillery (150mm Howitzer)")
